@@ -1,0 +1,12 @@
+{
+  "name": "instagramclone",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

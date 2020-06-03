@@ -1,0 +1,3 @@
+<h1> Confirmation of posting </h1>
+<h4> Dear <%= @post.user.name %>, you have posted the following picture</h4>
+<p><%= image_tag @post.image.url, size: 17*17 %></p>

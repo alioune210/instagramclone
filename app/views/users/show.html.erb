@@ -1,0 +1,21 @@
+<div class="container">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p> 
+  <strong>Picture:</strong>
+  <%= image_tag @user.picture.url, size: 13*13  %>
+</p>
+
+<button type="button" class="btn btn-warning" disabled><%= link_to 'Edit', edit_user_path(@user) %></button>
+
+</div>

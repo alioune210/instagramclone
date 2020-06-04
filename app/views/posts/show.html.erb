@@ -18,8 +18,9 @@
     <%= link_to 'Make it a favorite', favorites_path(post_id: @post.id), method: :post, class: 'btn btn-primary' %>
   <% end %>
 <% end %>
-
+<% if session[:user_id] == @post.user.id %>
 <%= link_to 'Edit', edit_post_path(@post) %> |
+<%end%>
 <%= link_to 'List of posts', posts_path %>
 
 </div>

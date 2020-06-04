@@ -1,6 +1,5 @@
 <h1>confirmation screen</h1>
 <%= form_with(model: @post, url: posts_path, local: true) do |form| %>
-  <!-- Description for displaying the uploaded image on the confirmation screen -->
   <%= image_tag(@post.image.url) if @post.image && @post.image.url %>
   <%= form.hidden_field :image_cache %>
   <%= form.hidden_field :content %>
